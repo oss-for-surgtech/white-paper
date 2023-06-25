@@ -7,20 +7,16 @@ Hamlyn Symposium on Medical Robotics [:link:](https://www.hamlynsymposium.org/ev
 
 </div>
 
-## White paper
-The aim of this white paper is to bring together engineers, researchers and clinicians to contribute to discussions on the current progress, challenges and trends on open-source software interfaces for Surgical Technologies. 
-Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surgtech/white-paper.
-
-
-## Aim of the white paper:
+## Aim of the white paper
 In my experience, discussion in conference workshops are not documented. 
 So the aim of the white paper, in a short-term goal, is to encourage people in the workshop to collaboratively contribute and edit the project to create a comprehensive and valuable resource that benefits the entire community.  
 Looking ahead, the long-term goal is to identify an appropriate venue where the white paper can be refined and prepared for submission. 
 By taking this approach, If you have any thoughts, suggestions, or questions regarding this process, please do not hesitate to share them.
+Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surgtech/white-paper.
 
 ## How to contribute
-Anyone with this link can view the overleaf project https://www.overleaf.com/read/pqjcgjxpsvqt
-If intersted in contributing to the paper, please send me an email to m.xochicale to share access to the paper and to this github repository.
+1. Please have a look to the current work in progress of the overleaf project https://www.overleaf.com/read/pqjcgjxpsvqt
+2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> to share access to the paper and to this github repository.
 
 ## Important dates 
 * 26 June 2023: Sharing overleaf latex document and repo
