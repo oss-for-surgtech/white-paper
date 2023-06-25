@@ -8,15 +8,14 @@ Hamlyn Symposium on Medical Robotics [:link:](https://www.hamlynsymposium.org/ev
 </div>
 
 ## Aim of the white paper
-In my experience, discussion in conference workshops are not documented. 
-So the aim of the white paper, in a short-term goal, is to encourage people in the workshop to collaboratively contribute and edit the project to create a comprehensive and valuable resource that benefits the entire community.  
+The aim of the white paper, in a short-term goal, is to encourage people in the workshop to collaboratively contribute and edit the project to create a comprehensive and valuable resource that benefits the entire community.  
 Looking ahead, the long-term goal is to identify an appropriate venue where the white paper can be refined and prepared for submission. 
 By taking this approach, If you have any thoughts, suggestions, or questions regarding this process, please do not hesitate to share them.
 Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surgtech/white-paper.
 
 ## How to contribute
 1. Please have a look to the current work in progress of the overleaf project https://www.overleaf.com/read/pqjcgjxpsvqt
-2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> to share access to the paper and to this github repository.
+2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> or raise an [issue](https://github.com/oss-for-surgtech/white-paper/issues) to share access to the paper and to this github repository.
 
 ## Important dates 
 * 26 June 2023: Sharing overleaf latex document and repo
