@@ -3,8 +3,9 @@
 </h1>
 <div align="center">
 
-Hamlyn Symposium on Medical Robotics 
-https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies/ 
+Hamlyn Symposium on Medical Robotics [:link:](https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies)
+
+</div>
 
 ## White paper
 The aim of this white paper is to bring together engineers, researchers and clinicians to contribute to discussions on the current progress, challenges and trends on open-source software interfaces for Surgical Technologies. 
@@ -22,7 +23,7 @@ Anyone with this link can view the overleaf project https://www.overleaf.com/rea
 If intersted in contributing to the paper, please send me an email to m.xochicale to share access to the paper and to this github repository.
 
 ## Important dates 
-* 26 June 2023: Sharing overleaf latex document.
+* 26 June 2023: Sharing overleaf latex document and repo
 * 26 July 2023: First round of revisions and contributions
 * 26 August 2023: Second round of revisions and submission of preprint to arxiv
 * 26 September 2023: Disscussing and dubmission to an appropriate venue of publication
