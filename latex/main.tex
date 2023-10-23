@@ -5,10 +5,11 @@
 %%% White Paper for Hamlym Symposium Workshop
 %%% [LINK]: https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies/
 %%% Important dates 
-%%% 26 June 2023: Sharing overleaf latex document.
-%%% 26 July 2023: First round of revisions and contributions
-%%% 26 August 2023: Second round of revisions and submission of preprint to arxiv
-%%% 26 September 2023: Disscussing and dubmission to an appropriate venue of publication
+%%% * 26 June 2023: Sharing overleaf latex document and repo
+%%% * 24 October 2023: Sharng first draft for contributions  
+%%% * 30 November 2023: First round of revisions and contributions
+%%% * 30 December 2023: Second round of revisions and submission of preprint to arxiv
+%%% * 15 January 2024: Disscussing and submission to an appropriate venue for publication
 %%%
 %%%
 %%% Aim of the white paper:
@@ -130,20 +131,37 @@ Hence, this white paper aims to discuss the current progress, challenges, opport
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Open-source software libraries for computer assisted surgery}
 Table~\ref{table1} illustrates a list of open-source software libraries for computer assisted surgery, including first release date, programming language, main dependencies, supported hardware devices.
-Table~\ref{table2} presents other categories such as the number of contributors, maintainers and users, years of funding, number of grants, platform to share code and data repositories. 
+Table~\ref{table2} presents other categories such as the number of contributors, maintainers and users platform to share code and data repositories. 
+%TO INCLUDE: years of funding, number of grants,
 
-
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \begin{tabular}{l|r|r|r|r|r}
-Library [References] & First registered release & Prog & Licence(s) & Packages and  &  Supported  \\ 
+Library [References] & First release or commit & Prog & Licence & Packages and  &  Supported  \\ 
  & & Lang &  & dependencies &  hardware  \\ 
  &  &  &  &  &  devices \\ 
 \hline
 %\hline
 
-Scikit-surgery \cite{Thompson2020-ScikitSurgery} & todo & Python & BSD & VTK, Qt-Pyside6 & ? \\
+
+
+VTK \cite{VTK:schroeder1996design} & 	
+v1.1.x, Apr 3, 1996
+& C++/C & Apache 2.0 & -- & ?\\
+
+ITK \cite{ITK:yoo2002engineering, ITK:mccormick2014} & 	
+31 July 2001  
+& C++ & Apache 2.0 & -- & ?\\
+
+
+Scikit-surgery \cite{Thompson2020-ScikitSurgery} & commit 13-Nov-2018 & Python & BSD & VTK, Qt-Pyside6 & 3 \\
 % First commit Nov 13, 2018 > https://github.com/SciKit-Surgery/scikit-surgery/commit/9aebf5a8cf687de4e55014914bf4c41fca7c014b
+
+% Hardware devices
+% https://github.com/SciKit-Surgery/scikit-surgerynditracker
+% https://github.com/SciKit-Surgery/scikit-surgerybk
+% https://github.com/SciKit-Surgery/scikit-surgeryarucotracker
+
 
 3DSlicer \cite{pieper2004-3Dslicer} & 
 v4.0.0 on Mar 13, 2020
@@ -155,7 +173,7 @@ v0.7.1 on Feb 23, 2011
 & C++ & BSD-3 & ITK, VTK & ? \\
 % https://github.com/MITK/MITK/releases/tag/v0.7.1
 
-Plus \cite{Lasso2014-PLUS} & 
+PlusLib \cite{Lasso2014-PLUS} & 
 v1.2.0 on Jul 27, 2011 
 & C++ & BSD-3 & VTK, ITK & ? \\ 
 % https://plustoolkit.github.io/features
@@ -170,15 +188,11 @@ FAST \cite{Smistad2015-FAST} &
 Jul  2014 
 & C++ & BSD-2 & VTK,ITK & ? \\
 
-
 MOPS \cite{Schwaner2021-MOPS} & 
-? 
-& C++ & ? & ROS2 & ? \\
+Oct 09, 2019
+& Python/C++ & -- & ROS2 & 4 \\
 % https://gitlab.com/sdurobotics/medical/mops
-
-ITK [?] & 	
-31 July 2001  
-& C++ & Apache 2.0 &  & ?\\
+% PDF: PDF: https://findresearcher.sdu.dk/ws/portalfiles/portal/194159713/Schwaner2021_MOPS.pdf
 
 % KitwareMedical &  & & todo & todo
 
@@ -192,14 +206,10 @@ ITK [?] &
 
 
 
-
-
-
-
 % Create a script to extract and plot starts, contributors, issues, forks, number of releseas
 %contributors, maintainers and users, years of funding, number of grants, platform to share code and data repositories. 
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \begin{tabular}{l|r|r|r|r|r|r|r} %1_ADD
 Library [Repository] & Contributors & Starts & Forks & Releases  &  Grants & Docs & Forum  \\ %2_ADD
@@ -207,20 +217,48 @@ Library [Repository] & Contributors & Starts & Forks & Releases  &  Grants & Doc
 \hline
 %\hline
 
-Scikit-surgery \cite{scikitsurgery-repo} & ? & ? & ?& ? & 3 & Spyntex & Discussions \\ %4_ADD
-3D-Slicer \cite{slicer-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
-FAST \cite{fast-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
-PlusLib \cite{plus-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
-VTK \cite{vtk-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
-ITK \cite{itk-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
-MITK \cite{mitk-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+VTK \cite{vtk-repo} & 138 & 257 & -- & 96 & ? & Sphinx & Discourse \\ %4_ADD
+% DOCS https://examples.vtk.org/site/
+% MEMBERS https://gitlab.kitware.com/vtk/vtk/-/project_members
+
+
+ITK \cite{itk-repo} & 278 & 1265 & 632 & 146 & ? & Sphinx & Discourse \\ %4_ADD
+% https://discourse.itk.org/
+
+Scikit-surgery \cite{scikitsurgery-repo} & ? & ? & ?& ? & ? & Sphinx & Discussions \\ %4_ADD
+
+
+3D-Slicer \cite{slicer-repo} & 201 & 1220 & 473 & 31 & ? & Sphinx & Discourse \\ %4_ADD
+% DOCS https://slicer.readthedocs.io/en/latest/
+% https://discourse.slicer.org/
+
+
+MITK \cite{mitk-repo} & 66 & 600 & 315 & 57 & ? & Doxygen & Mailinglist \\ %4_ADD
+% DOCS https://github.com/MITK/MITK/tree/master/Documentation
+% https://www.mitk.org/wiki/MITK_Mailinglist
+
+
+PlusLib \cite{plus-repo} & 41 & 112 & 92 & 17 & ? & Doxygen & Discussions \\ %4_ADD
+% http://perk-software.cs.queensu.ca/plus/doc/nightly/user/index.html
+% https://github.com/PlusToolkit/PlusLib/discussions
+
+CustusX \cite{custusX-repo} & 18 & 59 & 25 & 114 & ? & Doxygen & -- \\ %4_ADD
+% Contributors https://github.com/SINTEFMedtek/CustusX/graphs/contributors
+
+% https://github.com/SINTEFMedtek/CustusX/releases/tag/v3.0.8
+FAST \cite{fast-repo} & 11 & 367 & 95 & 31 & ? & Doxygen & Discussions/Gitter \\ %4_ADD
+% https://fast.eriksmistad.no/
+% https://github.com/smistad/FAST/discussions
+
+MOPS \cite{mops-repo} & 19 & 1 & -- & -- & ? & -- & -- \\ %4_ADD
+% MEMBERS https://gitlab.com/sdurobotics/medical/mops/mops_core/-/project_members
 
 
 %%TODO
 % https://github.com/KitwareMedical
 
 \end{tabular}
-\caption{Open-source software libraries for computer assisted surgery.}
+\caption{Open-source software repositories for projects on computer assisted surgery.}
 \label{table2}
 \end{table}
 
@@ -260,6 +298,14 @@ TODO
 
 \subsection{Funding}
 Another aspect of funding is guarantee cost stability or reduction and its profit increase in the long term which relates to design principles and its business plan \cite{imran2019software}.
+
+
+% The ITK project uses an open governance model and is fiscally sponsored by NumFOCUS. Consider making a tax-deductible donation to help the project pay for developer time, professional services, travel, workshops, and a variety of other needs.
+% https://opencollective.com/itk
+% https://github.com/InsightSoftwareConsortium/ITK#about
+
+% https://numfocus.org/programs/small-development-grants
+
 
 % IDEAS
 % * idea description. BY NAME on DATE
