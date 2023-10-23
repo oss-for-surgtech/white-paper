@@ -1,0 +1,441 @@
+%%%
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% White Paper for Hamlym Symposium Workshop
+%%% [LINK]: https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies/
+%%% Important dates 
+%%% 26 June 2023: Sharing overleaf latex document.
+%%% 26 July 2023: First round of revisions and contributions
+%%% 26 August 2023: Second round of revisions and submission of preprint to arxiv
+%%% 26 September 2023: Disscussing and dubmission to an appropriate venue of publication
+%%%
+%%%
+%%% Aim of the white paper:
+%%%
+%%% In my experience, discussion in conference workshops are not documented. So the aim of the white paper, in a short-term goal, is to encourage people in the workshop to collaboratively contribute and edit the project to create a comprehensive and valuable resource that benefits the entire community.  Looking ahead, the long-term goal is to identify an appropriate venue where the white paper can be refined and prepared for submission. If you have any thoughts, suggestions, or questions regarding this process, please do not hesitate to share them.
+%%%
+%%%
+%%% Anyone with this link can edit this project
+%%% https://www.overleaf.com/3134727115hnbsgrqvqsfx
+%%% Anyone with this link can view this project
+%%% https://www.overleaf.com/read/pqjcgjxpsvqt
+%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Few instructions if you are new to overleaf 
+%%% 1. Go to the section where you want to write up or to edit in the PDF paper and double click that will point you to the text editor. 
+%%% 2. Make edition as in word, and
+%%% 3. Press Ctrl+s to save and compile your changes in the PDF document.
+%%% 4. After Ctrl+s, all should be saved and ready for others to see, to review, etc.
+%%% Ps. Using percentage symbol in code editor or visual editor is considered as comment and it is not appearing in the PDF version of the paper.
+%%% Don't worry about adding new references `\cite{}`, we can add them later.
+%%% Thanks, Miguel
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Github repository:
+%%% The resources to reproduce this work are available at 
+%%% [LINK]: https://github.com/oss-for-surgtech/white-paper
+%%%
+%%%
+%%%
+
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{authblk}
+% \date{}
+
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\title{
+% White paper: Open-Source Software for Surgical Technologies % Tue 20 Jun 07:59:14 BST 2023
+% Open-Source Software for Surgical Technologies % Tue 20 Jun 08:06:20 BST 2023
+% Open-source Software for Surgical and Medical Technologies. % Fri 23 Jun 12:43:28 BST 2023
+Open-Source Software for Surgical Technologies: \\ Challenges and opportunities
+% Mon 26 Jun 23:53:13 BST 2023
+}
+% \author{
+% [Your Firstname and Surname] \\
+% T, %FULL NAME: Thomas Dowrick; EMAIL:  
+% , %FULL NAME: Stephen Thompson, EMAIL:
+% , %FULL NAME: Matt Clarkson, EMAIL:
+%  %FULL NAME: Miguel Xochicale: EMAIL: m.xochicale@ucl.ac.uk
+% }
+
+% Feel free to contribute to the paper and add your first name and surname below
+
+
+%\author[4]{Name Surname}
+%\affil[4]{Add affiliation}
+
+\author[3]{Your-name Your-surname}
+\affil[3]{Your Affiliation}
+
+% \author[1]{Thomas Dowrick}
+% \author[1]{Stephen Thompson}
+% \author[1]{Matt Clarkson}
+\author[1, 2]{Miguel Xochicale}
+\affil[2]{ARC, University College London}
+\affil[1]{WEISS, University College London}
+
+
+\date{
+\today
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The aim of this white paper is to bring together engineers, researchers and clinicians and people in industry to contribute to discussions on the current progress, challenges, opportunities and trends on open-source software interfaces for Surgical Technologies.
+Code, data and other resources to reproduce this work are available at \url{https://github.com/oss-for-surgtech/white-paper}.
+\end{abstract}
+
+%List of keywords, comma separated.
+\textbf{Keywords:} Open-source Software, Medical Technologies, Surgical Technologies.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+Open-source software libraries for computer assisted surgery (e.g. Scikit-surgery, 3DSlicer, MITK, PLUS, CustusX, FAST and KitwareMedical) have shown great progress in the last twenty years due to their rapid innovation and adaption to new technologies, continuous release of open software for algorithm evaluation, good documentation and educational resources for students, researchers, engineers and clinicians.
+However, research-driven technologies bring challenges with the use of the latest generation of software and hardware; fast prototyping and validation of new algorithms; fragmented source code for heterogeneous systems; high performance of medical image computing and visualisation in the operating room, and data privacy and its standardisation of data quality.
+Such challenges raise few questions on how to make open-source software libraries more sustainable, long-term supported and translatable to the clinic. 
+Hence, this white paper aims to discuss the current progress, challenges, opportunities and trends on open-source software interfaces for Medical and Surgical Technologies with engineers, researchers, clinicians and people in industry.
+
+% Open source has been the backbone of GNU/Linux operating systems currently impacting space and automotive industries and mobile technologies. However, the rapid progress of hardware and software technologies requires faster and reliable adaptation of the latest technologies (GPUs, FPGs, libraries, etc). 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Open-source software libraries for computer assisted surgery}
+Table~\ref{table1} illustrates a list of open-source software libraries for computer assisted surgery, including first release date, programming language, main dependencies, supported hardware devices.
+Table~\ref{table2} presents other categories such as the number of contributors, maintainers and users, years of funding, number of grants, platform to share code and data repositories. 
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|r|r|r|r|r}
+Library [References] & First registered release & Prog & Licence(s) & Packages and  &  Supported  \\ 
+ & & Lang &  & dependencies &  hardware  \\ 
+ &  &  &  &  &  devices \\ 
+\hline
+%\hline
+
+Scikit-surgery \cite{Thompson2020-ScikitSurgery} & todo & Python & BSD & VTK, Qt-Pyside6 & ? \\
+% First commit Nov 13, 2018 > https://github.com/SciKit-Surgery/scikit-surgery/commit/9aebf5a8cf687de4e55014914bf4c41fca7c014b
+
+3DSlicer \cite{pieper2004-3Dslicer} & 
+v4.0.0 on Mar 13, 2020
+& C++ & BSD & VTK, Tlc,... & ?\\
+% https://github.com/Slicer/Slicer/releases/tag/v4.0.0
+
+MITK \cite{Franz2012-MITK} & 
+v0.7.1 on Feb 23, 2011 
+& C++ & BSD-3 & ITK, VTK & ? \\
+% https://github.com/MITK/MITK/releases/tag/v0.7.1
+
+Plus \cite{Lasso2014-PLUS} & 
+v1.2.0 on Jul 27, 2011 
+& C++ & BSD-3 & VTK, ITK & ? \\ 
+% https://plustoolkit.github.io/features
+% https://github.com/PlusToolkit/PlusLib/releases/tag/Plus-1.2.0
+
+CustusX \cite{Askeland2016-CustusX} & 
+v3.0.8 Sep 17, 2010 
+(1998) & C++ & BSD-3 & QT,VTK,ITK & ? \\
+% https://github.com/SINTEFMedtek/CustusX/releases/tag/v3.0.8
+
+FAST \cite{Smistad2015-FAST} &  
+Jul  2014 
+& C++ & BSD-2 & VTK,ITK & ? \\
+
+
+MOPS \cite{Schwaner2021-MOPS} & 
+? 
+& C++ & ? & ROS2 & ? \\
+% https://gitlab.com/sdurobotics/medical/mops
+
+ITK [?] & 	
+31 July 2001  
+& C++ & Apache 2.0 &  & ?\\
+
+% KitwareMedical &  & & todo & todo
+
+\end{tabular}
+\caption{Open-source software libraries for computer assisted surgery.}
+\label{table1}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+% Create a script to extract and plot starts, contributors, issues, forks, number of releseas
+%contributors, maintainers and users, years of funding, number of grants, platform to share code and data repositories. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|r|r|r|r|r|r|r} %1_ADD
+Library [Repository] & Contributors & Starts & Forks & Releases  &  Grants & Docs & Forum  \\ %2_ADD
+% &  &  &  &  &  &  & \\ %3_ADD
+\hline
+%\hline
+
+Scikit-surgery \cite{scikitsurgery-repo} & ? & ? & ?& ? & 3 & Spyntex & Discussions \\ %4_ADD
+3D-Slicer \cite{slicer-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+FAST \cite{fast-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+PlusLib \cite{plus-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+VTK \cite{vtk-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+ITK \cite{itk-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+MITK \cite{mitk-repo} & ? & ? & ?& ? & ? & ? & ? \\ %4_ADD
+
+
+%%TODO
+% https://github.com/KitwareMedical
+
+\end{tabular}
+\caption{Open-source software libraries for computer assisted surgery.}
+\label{table2}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \section{Open-source software sustainability: performance, compatibility, maintenance, funding, etc}
+\section{Open-source software sustainability}
+Some of the aspects for software sustainability are related to design principles, coding principles, user experience and non-technical \cite{imran2019software}. However, we also think that funding, leadership, and coding standards aspects require further discussions.
+
+\subsection{Design principles}
+Long lasting and ensuring high quality output is a desirable reputation in any software product \cite{imran2019software}, to which there should be good strategies for technical sustainability.
+
+% \subsubsection{Technical sustainability}
+% issues, pull-request, user-documentation, modularisation, portability, continous-integration, testing, licensing, automatic-buildings, code-analysis, code-review.
+
+% \subsubsection{Documentation}
+% Documentation for all target groups: (a) users, (b) developers and mainteners, (c) interested parties (e.g. funders). 
+
+% \subsubsection{Maintenace strategy}
+% Maintener is the central role of the project.
+
+% % https://elib.dlr.de/194282/1/druskat-krause-hexatomic-slides.pdf
+
+\subsection{Coding principles}
+TODO
+% IDEAS
+% * idea description. BY NAME on DATE
+
+
+\subsection{User experience}
+TODO
+% IDEAS
+% * idea description. BY NAME on DATE
+
+
+\subsection{Funding}
+Another aspect of funding is guarantee cost stability or reduction and its profit increase in the long term which relates to design principles and its business plan \cite{imran2019software}.
+
+% IDEAS
+% * idea description. BY NAME on DATE
+% * Funding (short-term, long-term goals) by MX on Sun 25 Jun 11:44:06 BST 2023
+
+\subsection{Leadership}
+TODO
+% IDEAS
+% * idea description. BY NAME on DATE
+
+\subsection{Coding standards}
+TODO
+%IDEAS
+% * New hardware New regulations added MX on Sun 25 Jun 11:33:25 BST 2023
+
+
+\subsection{How to quantify impact?}
+TODO
+% IDEAS
+% * idea description. BY NAME on DATE
+
+
+\subsection{Social and environmental}
+Lago discussed the environmental aspect on the energy consumption and power efficiency of the resource of the project and the social sustainability that support maintainers, users, and their communities equally
+\cite{lago2019-Software-Sustainability}. 
+Imran and Kosar pointed out the need to have plans to train, prototype, and implement with the goal to create improved and more sustainable software, leading to the acceleration of progress of scientific software \cite{imran2019software}.
+
+Celero et al., expand the environmental aspect with green software that is sub categorised in (a) Green IN software (how to make software more sustainable) and (b) Green BY software (optimisation and management of energy consumption) \cite{calero2019-software-sustainability}.
+%Fig4 illustrares green software!
+
+% IDEAS
+% * idea description. BY NAME on DATE
+
+
+\subsection{Other aspects}
+* Operational efficiency: Software should be part of overall performance management practice. 
+* Desirable reputation of software product: long lasting and ensuring high quality output.
+% * Reduced cost: investing in new software require procurement, training and maintenance which needs to guarantee cost reduction and profit increase in the long term. 
+% * Accelerating progress of scientific software: plan to train, prototype, implement with the goal to create improved and more sustainable software. 
+\cite{imran2019software}.
+
+Licensing, automated builds, documentation, buildability, instability, testability, portability, analysability, changeability, evolvability, interoperatiblity. 
+% https://hexatomic.github.io/static/pdf/hexatomic_project_description_website.pdf
+% https://elib.dlr.de/194282/
+% Official URL: https://doi.org/10.5281/zenodo.7654778
+
+% IDEAS
+% * idea description. BY NAME on DATE
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Tips for better open-source software for SurgTech}
+The following is a list of items that can be potentially consider to be tips to be involved in open-source software surgical technologies.
+\begin{itemize}
+\item Training 
+    \begin{itemize}
+    \item Github workflow
+    \end{itemize}
+\item Checklists
+    \begin{itemize}
+    \item Data curation and versioning
+    \end{itemize}
+\item Templates
+    \begin{itemize}
+    \item For tutorials
+    \item For applications
+    \end{itemize}
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Trends and Future Challenges}
+Section to discuss trends and the future of Surgical Technologies: how to quickly adopt the latest technologies (e.g., artificial intelligence, augmented reality, high-performance computing, etc) while still complying with relevant quality standards.
+
+\subsection{Geopolitical innovation strategies on open-source software}
+There is a great challenge on how protection of AI innovations (e.g. datasets, algorithms, models, and APIs) \cite{munozferrandis2022-open-sourcing-ai}.
+
+\subsection{Fragmented hardware and software for clinical devices}
+TODO
+
+\subsection{New software and hardware}
+TODO
+
+
+\subsection{New technologies}
+* VTK-WebGPU
+% Speeding up rendering on the web
+% https://www.kitware.com/vtk-webgpu-on-the-desktop/?trk=feed_main-feed-card_feed-article-content
+
+
+\subsection{New national and international regulations}
+TODO
+
+\subsection{Industry partnerships}
+\begin{itemize}
+    \item Development to create a product that covers the need of a particular client
+    \item ...
+\end{itemize}
+
+
+\subsection{Others}
+\begin{itemize}
+    \item Standardizing communications protocols for medical device interoperability. 
+    \item ...
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+TODO
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+% \bibliographystyle{}
+\bibliography{references}
+
+\end{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%TODO
+* [ ] description of the item ADDED BY Name and Surname on ADDDATE
+* [ ] "To check how to do git" https://www.overleaf.com/blog/overleaf-server-pro-4-0-now-with-git-integration BY MX on  Tue 20 Jun 08:16:16 BST 2023
+
+
+%%%BLURS and IDEAS
+* [ ] description of the item ADDED BY Name and Surname on ADDDATE
+
+%%%% SECTIONS FROM TEMPLATE TO BE USED
+% \section{Some examples to get started}
+% \subsection{How to include Figures}
+% First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+
+% Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.25\linewidth]{frog.jpg}
+% \caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
+% \end{figure}
+
+% Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}. 
+
+
+
+% \subsection{How to write Mathematics}
+
+% \LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+% \[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+%       = \frac{1}{n}\sum_{i}^{n} X_i\]
+% denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+
+%%% Some revelant references 
+
+
+Potluri, Venkatesh, Sudheesh Singanamalla, Nussara Tieanklin, and Jennifer Mankoff. "Notably Inaccessible--Data Driven Understanding of Data Science Notebook (In) Accessibility." arXiv preprint arXiv:2308.03241 (2023).
+https://arxiv.org/pdf/2308.03241.pdf 
+
+

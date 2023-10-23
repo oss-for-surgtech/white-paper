@@ -1,10 +1,8 @@
 <h1 align="center">
-:page_facing_up: Open-Source Software for Surgical Technologies
+:page_facing_up: Open-Source Software for Surgical Technologies: Challenges and opportunities
 </h1>
 <div align="center">
-
 Hamlyn Symposium on Medical Robotics [:link:](https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies)
-
 </div>
 
 ## Aim of the white paper
@@ -19,9 +17,10 @@ Code, data and other resources to reproduce this work are available at https://g
 
 ## Important dates 
 * 26 June 2023: Sharing overleaf latex document and repo
-* 26 July 2023: First round of revisions and contributions
-* 26 August 2023: Second round of revisions and submission of preprint to arxiv
-* 26 September 2023: Disscussing and dubmission to an appropriate venue of publication
+* 24 October 2023: Sharng first draft for contributions  
+* 30 November 2023: First round of revisions and contributions
+* 30 December 2023: Second round of revisions and submission of preprint to arxiv
+* 15 January 2024: Disscussing and submission to an appropriate venue for publication
 
 ## Clone repository
 * Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
