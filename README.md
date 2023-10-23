@@ -2,7 +2,9 @@
 :page_facing_up: Open-Source Software for Surgical Technologies: Challenges and opportunities
 </h1>
 <div align="center">
+
 Hamlyn Symposium on Medical Robotics [:link:](https://www.hamlynsymposium.org/events/open-source-software-for-surgical-technologies)
+
 </div>
 
 ## Aim of the white paper
