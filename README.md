@@ -1,5 +1,5 @@
 <h1 align="center">
-:page_facing_up: Open-Source Software for Surgical Technologies
+:page_facing_up: Open-Source Software for Surgical Technologies: Challenges and opportunities
 </h1>
 <div align="center">
 
@@ -14,14 +14,15 @@ By taking this approach, If you have any thoughts, suggestions, or questions reg
 Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surgtech/white-paper.
 
 ## How to contribute
-1. Please have a look to the current work in progress of the overleaf project https://www.overleaf.com/read/pqjcgjxpsvqt
-2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> or raise an [issue](https://github.com/oss-for-surgtech/white-paper/issues) to share access to the paper and to this github repository.
+1. Please have a look to the current work in progress of [the overleaf project](https://www.overleaf.com/read/pqjcgjxpsvqt). 
+2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> or raise an [issue](https://github.com/oss-for-surgtech/white-paper/issues). 
 
 ## Important dates 
 * 26 June 2023: Sharing overleaf latex document and repo
-* 26 July 2023: First round of revisions and contributions
-* 26 August 2023: Second round of revisions and submission of preprint to arxiv
-* 26 September 2023: Disscussing and dubmission to an appropriate venue of publication
+* 24 October 2023: Sharng first draft for contributions  
+* 30 November 2023: First round of revisions and contributions
+* 30 December 2023: Second round of revisions and submission of preprint to arxiv
+* 15 January 2024: Disscussing and submission to an appropriate venue for publication
 
 ## Clone repository
 * Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
