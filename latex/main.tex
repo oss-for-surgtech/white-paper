@@ -93,7 +93,9 @@ Open-Source Software for Surgical Technologies: \\ Challenges and opportunities
 % \author[1]{Thomas Dowrick}
 % \author[1]{Stephen Thompson}
 % \author[1]{Matt Clarkson}
-\author[1, 2]{Miguel Xochicale}
+\author[1, 2]{
+Miguel Xochicale
+}
 \affil[2]{ARC, University College London}
 \affil[1]{WEISS, University College London}
 
@@ -106,7 +108,7 @@ Open-Source Software for Surgical Technologies: \\ Challenges and opportunities
 \maketitle
 
 \begin{abstract}
-The aim of this white paper is to bring together engineers, researchers and clinicians and people in industry to contribute to discussions on the current progress, challenges, opportunities and trends on open-source software interfaces for Surgical Technologies.
+In this work, we reported the current progress, challenges, opportunities and trends on open-source software for Surgical Technologies from the the Hamlym symposium of Medical Robotics workshop, bringing together engineers, researchers and people in industry.
 Code, data and other resources to reproduce this work are available at \url{https://github.com/oss-for-surgtech/white-paper}.
 \end{abstract}
 
@@ -268,23 +270,45 @@ MOPS \cite{mops-repo} & 19 & 1 & -- & -- & ? & -- & -- \\ %4_ADD
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% \section{Open-source software sustainability: performance, compatibility, maintenance, funding, etc}
 \section{Open-source software sustainability}
-Some of the aspects for software sustainability are related to design principles, coding principles, user experience and non-technical \cite{imran2019software}. However, we also think that funding, leadership, and coding standards aspects require further discussions.
+Some of the aspects for software sustainability are related to design principles, coding principles, user experience and non-technical \cite{imran2019software}. However, we also think that funding, leadership, and coding standards aspects require further discussions in the following sections.
 
 \subsection{Design principles}
-Long lasting and ensuring high quality output is a desirable reputation in any software product \cite{imran2019software}, to which there should be good strategies for technical sustainability.
+Long lasting and ensuring high quality output is a desirable reputation in any software product \cite{imran2019software}. 
+
+\subsubsection{Documentation}
+Documentation should ideally be considered for all target groups: (a) users, (b) developers and maintainers, (c) interested parties (e.g. founders). 
+
+\subsubsection{Maintenance strategy}
+Maintainer is the central role of the project, creating plans for start of the development, include documentations for off-/on boarding, tutorials and experiments, releases timelines, end of the project and final release. \cite{druskat_2022_7034163}
+%See slides of \cite{druskat_2022_7034163} 
+% https://elib.dlr.de/194282/1/druskat-krause-hexatomic-slides.pdf
+
+
+
+\subsection{Coding standards}
+
+\begin{itemize}
+\item IEC 60601 
+\item IEC 62304
+\item Good machine learning practices by FDA
+\end{itemize}
+%IDEAS
+% * New hardware New regulations added MX on Sun 25 Jun 11:33:25 BST 2023
+
+\subsection{Coding principles}
+TODO
+% IDEAS
+% * idea description. BY NAME on DATE
+
+
+
+% to which there should be good strategies for technical sustainability.
 
 % \subsubsection{Technical sustainability}
 % issues, pull-request, user-documentation, modularisation, portability, continous-integration, testing, licensing, automatic-buildings, code-analysis, code-review.
 
-% \subsubsection{Documentation}
-% Documentation for all target groups: (a) users, (b) developers and mainteners, (c) interested parties (e.g. funders). 
 
-% \subsubsection{Maintenace strategy}
-% Maintener is the central role of the project.
-
-% % https://elib.dlr.de/194282/1/druskat-krause-hexatomic-slides.pdf
-
-\subsection{Coding principles}
+\subsection{Leadership}
 TODO
 % IDEAS
 % * idea description. BY NAME on DATE
@@ -297,8 +321,7 @@ TODO
 
 
 \subsection{Funding}
-Another aspect of funding is guarantee cost stability or reduction and its profit increase in the long term which relates to design principles and its business plan \cite{imran2019software}.
-
+Another aspect of funding is guarantee cost stability or reduction and its profit increase in the long term which relates to design principles and its business plan \cite{imran2019software}. In this way, numfocus is good place for looking for development grants to help projects to pay for developer time, professional services, travel, workshops, and a variety of other needs \cite{numfocus}.
 
 % The ITK project uses an open governance model and is fiscally sponsored by NumFOCUS. Consider making a tax-deductible donation to help the project pay for developer time, professional services, travel, workshops, and a variety of other needs.
 % https://opencollective.com/itk
@@ -311,28 +334,15 @@ Another aspect of funding is guarantee cost stability or reduction and its profi
 % * idea description. BY NAME on DATE
 % * Funding (short-term, long-term goals) by MX on Sun 25 Jun 11:44:06 BST 2023
 
-\subsection{Leadership}
-TODO
-% IDEAS
-% * idea description. BY NAME on DATE
-
-\subsection{Coding standards}
-TODO
-%IDEAS
-% * New hardware New regulations added MX on Sun 25 Jun 11:33:25 BST 2023
 
 
 \subsection{How to quantify impact?}
-TODO
-% IDEAS
-% * idea description. BY NAME on DATE
-
+Recently, Thompson et al. presented software sustainability dashboard to quantify the sustainability but also its impact of software projects, including metrics: total weeks up, last update, lines of code, starts, forks, watchers, and contributors \cite{ozdemir_2023_8337480}.
 
 \subsection{Social and environmental}
 Lago discussed the environmental aspect on the energy consumption and power efficiency of the resource of the project and the social sustainability that support maintainers, users, and their communities equally
 \cite{lago2019-Software-Sustainability}. 
 Imran and Kosar pointed out the need to have plans to train, prototype, and implement with the goal to create improved and more sustainable software, leading to the acceleration of progress of scientific software \cite{imran2019software}.
-
 Celero et al., expand the environmental aspect with green software that is sub categorised in (a) Green IN software (how to make software more sustainable) and (b) Green BY software (optimisation and management of energy consumption) \cite{calero2019-software-sustainability}.
 %Fig4 illustrares green software!
 
@@ -341,13 +351,18 @@ Celero et al., expand the environmental aspect with green software that is sub c
 
 
 \subsection{Other aspects}
-* Operational efficiency: Software should be part of overall performance management practice. 
-* Desirable reputation of software product: long lasting and ensuring high quality output.
+
+
+\begin{itemize}
+\item Operational efficiency: Software should be part of overall performance management practice. 
+\item Desirable reputation of software product: long lasting and ensuring high quality output.
 % * Reduced cost: investing in new software require procurement, training and maintenance which needs to guarantee cost reduction and profit increase in the long term. 
 % * Accelerating progress of scientific software: plan to train, prototype, implement with the goal to create improved and more sustainable software. 
-\cite{imran2019software}.
+% \cite{imran2019software}.
+\item Licensing, automated builds, documentation, buildability, install-ability, testability, portability, analysability, changeability, evolvability, interoperability. 
+\end{itemize}
 
-Licensing, automated builds, documentation, buildability, instability, testability, portability, analysability, changeability, evolvability, interoperatiblity. 
+
 % https://hexatomic.github.io/static/pdf/hexatomic_project_description_website.pdf
 % https://elib.dlr.de/194282/
 % Official URL: https://doi.org/10.5281/zenodo.7654778
@@ -368,6 +383,7 @@ The following is a list of items that can be potentially consider to be tips to 
 \item Training 
     \begin{itemize}
     \item Github workflow
+    \item Hackathons to code together
     \end{itemize}
 \item Checklists
     \begin{itemize}
@@ -388,24 +404,17 @@ The following is a list of items that can be potentially consider to be tips to 
 \section{Trends and Future Challenges}
 Section to discuss trends and the future of Surgical Technologies: how to quickly adopt the latest technologies (e.g., artificial intelligence, augmented reality, high-performance computing, etc) while still complying with relevant quality standards.
 
-\subsection{Geopolitical innovation strategies on open-source software}
-There is a great challenge on how protection of AI innovations (e.g. datasets, algorithms, models, and APIs) \cite{munozferrandis2022-open-sourcing-ai}.
+\subsection{New software and hardware technologies}
+\begin{itemize}
+\item VTK-WebGPU. Speeding up rendering on the web.
+% https://www.kitware.com/vtk-webgpu-on-the-desktop/?trk=feed_main-feed-card_feed-article-content
+\item FPGA for low-latency application
+\end{itemize}
 
 \subsection{Fragmented hardware and software for clinical devices}
-TODO
+The project "MOPS": a Modular and Open Platform for Surgical Robotics Research, based on three layers for hardware, driver layers, and control and application layers. MOPS integrate seven pieces of hardware with its software development based on ROS2 via GitLab \cite{Schwaner2021-MOPS, mops-repo}. 
+Similarly, FAST is based on hardware, drivers, libraries, framework core and applications, which main focus in medical image computing and visualitation \cite{Smistad2015-FAST, fast-repo}.
 
-\subsection{New software and hardware}
-TODO
-
-
-\subsection{New technologies}
-* VTK-WebGPU
-% Speeding up rendering on the web
-% https://www.kitware.com/vtk-webgpu-on-the-desktop/?trk=feed_main-feed-card_feed-article-content
-
-
-\subsection{New national and international regulations}
-TODO
 
 \subsection{Industry partnerships}
 \begin{itemize}
@@ -413,6 +422,12 @@ TODO
     \item ...
 \end{itemize}
 
+
+\subsection{New national and international regulations}
+TODO
+
+\subsection{Geopolitical innovation strategies on open-source software}
+There is a great challenge on how protection of AI innovations (e.g. datasets, algorithms, models, and APIs) \cite{munozferrandis2022-open-sourcing-ai}.
 
 \subsection{Others}
 \begin{itemize}
@@ -426,7 +441,8 @@ TODO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
-TODO
+The workshop of Open-Source Software for Surgical Technologies invited renowned software leads, academics and researchers to discuss challenges and opportunities. 
+
 
 
 

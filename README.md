@@ -14,8 +14,8 @@ By taking this approach, If you have any thoughts, suggestions, or questions reg
 Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surgtech/white-paper.
 
 ## How to contribute
-1. Please have a look to the current work in progress of the overleaf project https://www.overleaf.com/read/pqjcgjxpsvqt
-2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> or raise an [issue](https://github.com/oss-for-surgtech/white-paper/issues) to share access to the paper and to this github repository.
+1. Please have a look to the current work in progress of [the overleaf project](https://www.overleaf.com/read/pqjcgjxpsvqt). 
+2. If you are still intersted to contribute to to the paper, please send me an email to <m.xochicale@ucl.ac.uk> or raise an [issue](https://github.com/oss-for-surgtech/white-paper/issues). 
 
 ## Important dates 
 * 26 June 2023: Sharing overleaf latex document and repo
