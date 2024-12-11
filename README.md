@@ -1,5 +1,5 @@
 <h1 align="center">
-:warning: WIP :page_facing_up: Open-Source Software for Surgical Technologies: Challenges and opportunities
+:warning: WIP :page_facing_up: Open-Source Software for Surgical, Medical and AI Technologies: Challenges and opportunities
 </h1>
 <div align="center">
 
@@ -9,7 +9,7 @@
 The aim of the white paper, in a short-term goal, is to encourage people in the workshop to collaboratively contribute and edit the project to create a comprehensive and valuable resource that benefits the entire community.  
 Looking ahead, the long-term goal is to identify an appropriate venue where the white paper can be refined and prepared for submission. 
 By taking this approach, If you have any thoughts, suggestions, or questions regarding this process, please do not hesitate to share them.
-Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surgtech/white-paper.
+Code, data and other resources to reproduce this work are available at https://github.com/oss-for-surg-med-ai-tech/white-paper-2025.
 
 ## How to contribute
 1. Please have a look to the current work in progress of [the overleaf project](https://www.overleaf.com/read/pqjcgjxpsvqt). 
@@ -17,7 +17,7 @@ Code, data and other resources to reproduce this work are available at https://g
 
 ## :warning: Important dates (work in progress)
 * [x] 26 June 2023: Sharing overleaf latex document and repo
-* [ ] <add date> Sharng first draft for contributions  
+* [ ] <add date>: Sharing first draft for contributions
 * [ ] <add date>: First round of revisions and contributions
 * [ ] <add date>: Second round of revisions and submission of preprint to arxiv
 * [ ] <add date>: Disscussing and submission to an appropriate venue for publication
@@ -26,8 +26,7 @@ Code, data and other resources to reproduce this work are available at https://g
 * Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
 * Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
-cd && mkdir -p $HOME/repositories/oss-for-surgtech && cd $HOME/repositories/oss-for-surgtech
-git clone git@github.com:oss-for-surgtech/white-paper.git
+git@github.com:oss-for-surg-med-ai-tech/white-paper-2025.git
 ```
 
 ## Contributors
